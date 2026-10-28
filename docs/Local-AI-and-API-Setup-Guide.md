@@ -22,6 +22,8 @@ On Windows, press Ctrl+Shift+Esc to open Task Manager, then select Performance. 
 
 Use the requirements and model size shown by your model app as the final authority. RAM and VRAM requirements depend on model size, quantization, context length, and what else is running. If unsure, start with a smaller instruction-following model.
 
+![LM Studio setup flow](../assets/lmstudio-flow.svg)
+
 ## Step 2: install LM Studio
 
 1. Open https://lmstudio.ai/ in your browser.
