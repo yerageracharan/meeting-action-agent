@@ -8,7 +8,9 @@ Turn chaotic meeting notes into a useful action plan: what was decided, what nee
 
 **The important rule:** if the notes do not name an owner or deadline, the agent leaves it unknown. It should not invent details to make the output look complete.
 
-[Quick start](#quick-start) · [How it works](#how-it-works) · [Choose your model](#choose-how-the-ai-runs) · [Local AI setup guide](docs/Local-AI-and-API-Setup-Guide.md) · [Troubleshooting](#troubleshooting)
+[Download full project ZIP](https://github.com/yerageracharan/meeting-action-agent/archive/refs/heads/main.zip) · [Download visual setup PDF](docs/Local-AI-and-API-Setup-Guide.pdf) · [Read setup guide](docs/Local-AI-and-API-Setup-Guide.md)
+
+[Quick start](#quick-start) · [How it works](#how-it-works) · [Choose your model](#choose-how-the-ai-runs) · [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -74,6 +76,8 @@ Choose one of the following routes. You do not need a paid API key to use a loca
 ![Local model versus hosted API](assets/model-routes.svg)
 
 #### Option A — LM Studio on your own computer
+
+![LM Studio setup steps](assets/lmstudio-flow.svg)
 
 1. Download and install LM Studio from https://lmstudio.ai/.
 2. Open Discover and select a model small enough for your computer.
