@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meeting-action-agent"
+version = "0.1.0"
+description = "Turn meeting notes into evidence-backed action items using a local or API-connected language model."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Charan Yeragera"}]
+dependencies = []
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.35"]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+meetagent = "meetagent.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["meetagent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
