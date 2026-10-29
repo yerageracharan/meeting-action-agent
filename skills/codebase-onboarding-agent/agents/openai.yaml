@@ -1,0 +1,9 @@
+interface:
+  display_name: "Codebase Onboarding Agent"
+  short_description: "Understand an unfamiliar repository before contributing"
+  icon_small: "../../assets/hero.svg"
+  icon_large: "../../assets/hero.svg"
+  brand_color: "#6557D9"
+  default_prompt: "Give me a beginner-friendly tour of this repository and suggest three safe first contributions."
+policy:
+  allow_implicit_invocation: true
