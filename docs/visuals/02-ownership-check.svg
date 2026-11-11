@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Unknown is better than invented</title><desc id="desc">A small validation gate prevents confident-looking false assignments.</desc>
+  <defs><pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#c9c3b7"/></pattern></defs>
+  <rect width="1200" height="760" rx="34" fill="#fff8ec"/>
+  <rect x="0" y="0" width="1200" height="760" rx="34" fill="url(#dots)" opacity=".45"/>
+  <path d="M42 48q-8 20 0 39M1150 67q14-18 0-38" fill="none" stroke="#e4ad43" stroke-width="5" stroke-linecap="round"/>
+  <rect x="52" y="54" width="215" height="37" rx="18" fill="#202b39"/>
+  <text x="159" y="79" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="800" letter-spacing="2" fill="#fff">ACTION VALIDATION</text>
+  <text x="52" y="154" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="900" fill="#202b39">Unknown is better than invented</text>
+  <text x="54" y="190" font-family="Inter,Arial,sans-serif" font-size="20" fill="#657282">A small validation gate prevents confident-looking false assignments.</text>
+  <g>
+      <rect x="59" y="225" width="222" height="226" rx="20" fill="#e5ddcf"/>
+      <rect x="54" y="218" width="222" height="226" rx="20" fill="#fffdf8" stroke="#202b39" stroke-width="3"/>
+      <path d="M72 219h186" stroke="#e45a4f" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="84" cy="260" r="17" fill="#e45a4f"/>
+      <text x="84" y="266" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">1</text>
+      <text x="78" y="310" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="800" fill="#202b39">TASK EVIDENCE?</text>
+      <text x="78" y="345" font-family="Inter,Arial,sans-serif" font-size="16" fill="#657282">Exact quote exists?</text>
+      <text x="78" y="370" font-family="Inter,Arial,sans-serif" font-size="16" fill="#657282">If not, reject it</text>
+      <path d="M78 405h150" stroke="#e45a4f" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+      <path d="M230 395l10 10-10 10" fill="none" stroke="#e45a4f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g><g>
+      <rect x="349" y="225" width="222" height="226" rx="20" fill="#e5ddcf"/>
+      <rect x="344" y="218" width="222" height="226" rx="20" fill="#fffdf8" stroke="#202b39" stroke-width="3"/>
+      <path d="M362 219h186" stroke="#3e9c95" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="374" cy="260" r="17" fill="#3e9c95"/>
+      <text x="374" y="266" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">2</text>
+      <text x="368" y="310" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="800" fill="#202b39">OWNER?</text>
+      <text x="368" y="345" font-family="Inter,Arial,sans-serif" font-size="16" fill="#657282">Named in the notes?</text>
+      <text x="368" y="370" font-family="Inter,Arial,sans-serif" font-size="16" fill="#657282">Otherwise leave null</text>
+      <path d="M368 405h150" stroke="#3e9c95" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+      <path d="M520 395l10 10-10 10" fill="none" stroke="#3e9c95" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g><g>
+      <rect x="639" y="225" width="222" height="226" rx="20" fill="#e5ddcf"/>
+      <rect x="634" y="218" width="222" height="226" rx="20" fill="#fffdf8" stroke="#202b39" stroke-width="3"/>
+      <path d="M652 219h186" stroke="#e4ad43" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="664" cy="260" r="17" fill="#e4ad43"/>
+      <text x="664" y="266" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">3</text>
+      <text x="658" y="310" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="800" fill="#202b39">DEADLINE?</text>
+      <text x="658" y="345" font-family="Inter,Arial,sans-serif" font-size="16" fill="#657282">Explicitly stated?</text>
+      <text x="658" y="370" font-family="Inter,Arial,sans-serif" font-size="16" fill="#657282">Otherwise leave null</text>
+      <path d="M658 405h150" stroke="#e4ad43" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+      <path d="M810 395l10 10-10 10" fill="none" stroke="#e4ad43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g><g>
+      <rect x="929" y="225" width="222" height="226" rx="20" fill="#e5ddcf"/>
+      <rect x="924" y="218" width="222" height="226" rx="20" fill="#fffdf8" stroke="#202b39" stroke-width="3"/>
+      <path d="M942 219h186" stroke="#6e8fb7" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="954" cy="260" r="17" fill="#6e8fb7"/>
+      <text x="954" y="266" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">4</text>
+      <text x="948" y="310" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="800" fill="#202b39">STATUS</text>
+      <text x="948" y="345" font-family="Inter,Arial,sans-serif" font-size="16" fill="#657282">Both known: assigned</text>
+      <text x="948" y="370" font-family="Inter,Arial,sans-serif" font-size="16" fill="#657282">Anything missing: clarify</text>
+      <path d="M948 405h150" stroke="#6e8fb7" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+      <path d="M1100 395l10 10-10 10" fill="none" stroke="#6e8fb7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g><g><path d="M283 331h54" stroke="#202b39" stroke-width="4" stroke-linecap="round"/><path d="M323 318l14 13-14 13" fill="none" stroke="#202b39" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g><g><path d="M573 331h54" stroke="#202b39" stroke-width="4" stroke-linecap="round"/><path d="M613 318l14 13-14 13" fill="none" stroke="#202b39" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g><g><path d="M863 331h54" stroke="#202b39" stroke-width="4" stroke-linecap="round"/><path d="M903 318l14 13-14 13" fill="none" stroke="#202b39" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <rect x="54" y="505" width="855" height="150" rx="22" fill="#fffdf8" stroke="#202b39" stroke-width="3"/>
+  <path d="M81 540q18-20 38 0" fill="none" stroke="#e4ad43" stroke-width="5" stroke-linecap="round"/>
+  <text x="81" y="575" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="900" letter-spacing="1.5" fill="#e4ad43">THE NON-NEGOTIABLE RULE</text>
+  <text x="81" y="610" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#202b39">A task is not fully assigned when its owner or deadline is missing.</text>
+  <g transform="translate(965 514)">
+    <ellipse cx="96" cy="185" rx="80" ry="13" fill="#d9d1c4" opacity=".6"/>
+    <path d="M48 92Q34 37 88 20Q145 10 153 76Q150 104 130 111L61 109Z" fill="#202b39" stroke="#202b39" stroke-width="4"/>
+    <circle cx="98" cy="78" r="43" fill="#f2c8a9" stroke="#202b39" stroke-width="4"/>
+    <path d="M56 67Q60 23 103 32Q135 29 141 58Q119 48 104 51Q84 48 56 67" fill="#202b39"/>
+    <circle cx="83" cy="79" r="5" fill="#202b39"/><circle cx="113" cy="79" r="5" fill="#202b39"/>
+    <path d="M87 96Q98 105 110 95" fill="none" stroke="#202b39" stroke-width="3" stroke-linecap="round"/>
+    <path d="M63 119Q96 105 132 119L149 177H45Z" fill="#e4ad43" stroke="#202b39" stroke-width="4"/>
+    <path d="M61 130L26 159M130 130L159 153" fill="none" stroke="#202b39" stroke-width="8" stroke-linecap="round"/>
+    <path d="M72 176l-5 12M120 176l6 12" stroke="#202b39" stroke-width="8" stroke-linecap="round"/>
+    <rect x="66" y="78" width="62" height="55" rx="7" fill="#fffdf8" stroke="#202b39" stroke-width="4"/><path d="M80 93h34M80 104h25M80 115h29" stroke="#e4ad43" stroke-width="3" stroke-linecap="round"/><path d="M118 72l14-13" stroke="#202b39" stroke-width="5" stroke-linecap="round"/>
+    <path d="M25 31l-12-12M169 37l15-10M20 77l-15 0" stroke="#e45a4f" stroke-width="5" stroke-linecap="round"/>
+    <path d="M153 11q12-14 26-6" fill="none" stroke="#e4ad43" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="55" y="715" font-family="Inter,Arial,sans-serif" font-size="14" fill="#657282">FIELD GUIDE • TRACE THE INPUT • VERIFY THE OUTPUT</text>
+  <path d="M900 704q80 16 165-2" fill="none" stroke="#e4ad43" stroke-width="4" stroke-linecap="round"/>
+</svg>

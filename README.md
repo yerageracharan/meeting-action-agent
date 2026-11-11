@@ -44,6 +44,11 @@ It can produce:
 
 ### What this project does not do
 
+![Meeting action ownership validation](docs/visuals/02-ownership-check.svg)
+
+*Missing owners and deadlines stay unknown instead of being guessed.*
+
+
 It does not join meetings, record audio, transcribe recordings, send emails, update your calendar, or create tasks inside apps such as Jira or Trello. You provide written notes, and it creates a report for you to review.
 
 Think of it as a careful assistant who prepares the first draft of your follow-up list—not someone who is allowed to make business decisions for you.
@@ -394,6 +399,11 @@ If you see an error in the browser, read the red error message and the correspon
 ---
 
 ## How the agent works (plain English)
+
+![Meeting notes to action plan](docs/visuals/01-notes-to-actions.svg)
+
+*The agent extracts candidate actions, validates each evidence quote, and marks incomplete assignments for clarification.*
+
 
 ![How notes become an action plan](assets/workflow.svg)
 
