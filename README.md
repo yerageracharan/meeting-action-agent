@@ -568,6 +568,13 @@ LICENSE                            MIT license
 
 Possible next steps include support for Word documents and transcripts, better handling of unclear speakers, exporting to calendar/task systems with explicit user approval, broader tests on real anonymised notes, and comparisons across local and hosted models. These features are ideas—not features this version already provides.
 
+
+## Contributing and project safety
+
+- [Contributing guide](CONTRIBUTING.md) — development setup, test commands, and pull-request expectations.
+- [AI coding-agent instructions](AGENTS.md) — repository-specific invariants and verification rules.
+- [Security policy](SECURITY.md) — private vulnerability disclosure and safe handling.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
