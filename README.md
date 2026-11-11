@@ -4,6 +4,12 @@
 
 **[Documentation map](docs/README.md)** · [Contribution guide](CONTRIBUTING.md) · [Security policy](SECURITY.md)
 
+<p>
+  <a href="https://github.com/yerageracharan/meeting-action-agent/actions/workflows/tests.yml"><img src="https://github.com/yerageracharan/meeting-action-agent/actions/workflows/tests.yml/badge.svg?branch=main" alt="Tests" /></a>
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10 or newer" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License" /></a>
+</p>
+
 **Day 02 of the 200 AI Agents in 200 Days challenge**
 
 Turn messy meeting notes into a practical action plan: decisions, tasks, owners, deadlines, open questions, and blockers.
