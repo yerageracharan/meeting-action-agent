@@ -1,0 +1,29 @@
+name: Feature request
+description: Propose a focused workflow or extraction improvement.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: What meeting follow-up task is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the workflow, schema, or output change.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Example and validation plan
+      description: Use synthetic notes and define how correctness will be checked.
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Alternatives, privacy, and trade-offs
