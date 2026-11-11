@@ -2,6 +2,8 @@
 
 # Meeting Action Agent
 
+**[Documentation map](docs/README.md)** · [Contribution guide](CONTRIBUTING.md) · [Security policy](SECURITY.md)
+
 **Day 02 of the 200 AI Agents in 200 Days challenge**
 
 Turn messy meeting notes into a practical action plan: decisions, tasks, owners, deadlines, open questions, and blockers.
