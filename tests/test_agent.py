@@ -52,3 +52,41 @@ def test_markdown_includes_evidence_and_status():
 def test_empty_notes_are_rejected():
     with pytest.raises(ValueError, match="empty"):
         analyze_notes("   ", model_call=lambda system, user: "{}")
+
+
+def test_validate_output_rejects_non_text_decision_and_risk_entries():
+    invalid = {
+        "meeting_summary": "Summary",
+        "decisions": [{"decision": "launch"}],
+        "action_items": [],
+    }
+    with pytest.raises(AgentOutputError, match="decisions item 1"):
+        validate_output(invalid)
+
+
+def test_validate_output_requires_object():
+    with pytest.raises(AgentOutputError, match="JSON object"):
+        validate_output(["not", "an", "object"])
+
+
+def test_markdown_escapes_untrusted_meeting_text():
+    report = to_markdown({
+        "meeting_summary": "<script>alert(1)</script> [launch](https://example.com)",
+        "decisions": ["# Do not turn this into a heading"],
+        "action_items": [{
+            "task": "[Open link](https://example.com)",
+            "owner": "Priya_*",
+            "due_date": "Thursday",
+            "priority": "medium",
+            "status": "assigned",
+            "evidence": "`raw code`",
+        }],
+        "open_questions": ["<img src=x onerror=alert(1)>"],
+        "risks_or_blockers": [],
+        "assumptions_to_confirm": [],
+    })
+    assert "&lt;script&gt;" in report
+    assert r"\[launch\]" in report
+    assert r"\# Do not turn this into a heading" in report
+    assert r"\[Open link\]" in report
+    assert "&lt;img" in report

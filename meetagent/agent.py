@@ -62,6 +62,8 @@ def _parse_json(text: str) -> dict[str, Any]:
 
 def validate_output(data: dict[str, Any]) -> dict[str, Any]:
     """Validate essential fields and normalize predictable omissions without inventing content."""
+    if not isinstance(data, dict):
+        raise AgentOutputError("The model output must be a JSON object.")
     data.setdefault("meeting_summary", "")
     if not isinstance(data["meeting_summary"], str):
         raise AgentOutputError("meeting_summary must be text.")
@@ -70,6 +72,13 @@ def validate_output(data: dict[str, Any]) -> dict[str, Any]:
             data[key] = []
         if not isinstance(data[key], list):
             raise AgentOutputError(f"{key} must be a list.")
+        if key != "action_items":
+            cleaned_values = []
+            for idx, value in enumerate(data[key], start=1):
+                if not isinstance(value, str) or not value.strip():
+                    raise AgentOutputError(f"{key} item {idx} must be non-empty text.")
+                cleaned_values.append(value.strip())
+            data[key] = cleaned_values
     cleaned = []
     for idx, item in enumerate(data["action_items"], start=1):
         if not isinstance(item, dict):
