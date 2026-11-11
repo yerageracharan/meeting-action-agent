@@ -11,8 +11,10 @@ def _inline_text(value: Any) -> str:
     """Render untrusted meeting/model text as literal inline Markdown text."""
     text = re.sub(r"\\s+", " ", str(value)).strip()
     text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    return re.sub(r"([\\\\`*_{}\\[\\]()#+\\-.!|])", r"\\\\\\1", text)
-
+    # Build escapes character-by-character; this avoids ambiguous regex replacement
+    # backreference escaping and keeps meeting text from creating Markdown syntax.
+    special_codes = {92, 96, 42, 95, 123, 125, 91, 93, 40, 41, 35, 43, 45, 46, 33, 124}
+    return "".join((chr(92) + char) if ord(char) in special_codes else char for char in text)
 
 def to_markdown(data: dict[str, Any]) -> str:
     lines = ["# Meeting Action Plan", "", "## Summary", "", _inline_text(data.get("meeting_summary") or "No summary returned."), "", "## Decisions", ""]
